@@ -1,29 +1,12 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(MyApp());
-} //funcion principal
-
-class MyApp extends StatelessWidget {
+class PaginaInicial extends StatefulWidget {
+  PaginaInicial({Key? key}) : super(key: key);
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-        debugShowCheckedModeBanner: false,
-        title: 'Aprendiendo GridView',
-        theme: ThemeData(
-          primarySwatch: Colors.green,
-        ),
-        home: MyHomePage());
-  }
-} //widgets sin estado
-
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key? key}) : super(key: key);
-  @override
-  _MyHomePageState createState() => _MyHomePageState();
+  _PaginaInicialState createState() => _PaginaInicialState();
 } //widget con estado
 
-class _MyHomePageState extends State<MyHomePage> {
+class _PaginaInicialState extends State<PaginaInicial> {
   List<String> images = [
     "assets/images/img1.jpg",
     "assets/images/img2.jpg",

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:gaytan/gridviewempleados.dart.dart';
+import 'package:gaytan/gridviewempleados.dart';
 
-//gaytan
 void main() {
   runApp(MyApp());
 } //funcion principal
